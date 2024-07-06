@@ -13,7 +13,7 @@ const action = createSafeActionClient();
 export const emailRegister = action(
   RegisterSchema,
   async ({ email, name, password }) => {
-    //We are hasing our password
+    //We are hasing our paszsword
     const hashedPassword = await bcrpyt.hash(password, 10);
 
     //Check existing user
