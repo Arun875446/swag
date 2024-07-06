@@ -7,7 +7,6 @@ import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/components/providers/theme-provider";
 import Toaster from "@/components/ui/toaster";
 
-
 const roboto = Roboto({
   weight: ["400", "500", "700", "900"],
   subsets: ["latin"],

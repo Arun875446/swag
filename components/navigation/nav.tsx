@@ -4,10 +4,8 @@ import { LogIn } from "lucide-react";
 import Link from "next/link";
 import { UserButton } from "./user-button";
 import CartDrawer from "../cart/cart-drawer";
-import Logo from "@/public/atomic-slashes-svgrepo-com.svg";
-import Image from "next/image";
 
-// import Logo from "@/components/navigation/logo";
+import Logo from "@/components/navigation/atomic-slashes-svgrepo-com.svg";
 
 export default async function Nav() {
   const session = await auth();
@@ -19,13 +17,7 @@ export default async function Nav() {
         <ul className="flex justify-between items-center md:gap-8 gap-4">
           <li className="flex flex-1">
             <Link href="/">
-              <Image
-                src={Logo}
-                alt="Logo"
-                className="w-12 h-12"
-                width={100}
-                height={100}
-              />
+              <Logo />
             </Link>
           </li>
           <li className="relative flex items-center hover:bg-muted">
