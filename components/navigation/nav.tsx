@@ -5,7 +5,7 @@ import Link from "next/link";
 import { UserButton } from "./user-button";
 import CartDrawer from "../cart/cart-drawer";
 
-import Logo from "@/components/navigation/atomic-slashes-svgrepo-com.svg";
+// import Logo from "@/components/navigation/logo";
 
 export default async function Nav() {
   const session = await auth();
@@ -17,11 +17,11 @@ export default async function Nav() {
         <ul className="flex justify-between items-center md:gap-8 gap-4">
           <li className="flex flex-1">
             <Link href="/">
-              <Logo />
+           Logo here
             </Link>
           </li>
           <li className="relative flex items-center hover:bg-muted">
-            <CartDrawer />
+            <CartDrawer/>
           </li>
           {!session ? (
             <li className="flex items-center justify-center">
