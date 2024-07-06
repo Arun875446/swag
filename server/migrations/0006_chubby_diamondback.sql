@@ -1,0 +1,1 @@
+ALTER TABLE "user" RENAME COLUMN "customerID" TO "password";
