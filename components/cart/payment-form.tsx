@@ -111,5 +111,3 @@ export default function PaymentForm({ totalPrice }: { totalPrice: number }) {
     </form>
   );
 }
-
-
