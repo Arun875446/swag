@@ -126,5 +126,5 @@ export async function POST(req: NextRequest) {
       console.log(`${event.type}`);
   }
 
-  return new Response("ok", { status: 300 });
+  return new Response("ok", { status: 200 });
 }
