@@ -1,5 +1,6 @@
 import { defineConfig } from "drizzle-kit";
 import * as dotenv from "dotenv";
+import { liftTarget } from "@tiptap/pm/transform";
 
 dotenv.config({
   path: ".env.local",
