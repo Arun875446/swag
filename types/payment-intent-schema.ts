@@ -12,4 +12,5 @@ export const paymentIntentSchema = z.object({
       image: z.string(),
     })
   ),
+  phoneNumber: z.string(),
 });

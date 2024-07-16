@@ -48,7 +48,8 @@ const action = createSafeActionClient();
 
 export const createPaymentIntent = action(
   paymentIntentSchema,
-  async ({ amount, cart, currency }) => {
+  async ({ amount, cart, currency, phoneNumber }) => {
+    // Add phoneNumber as a parameter
     const user = await auth();
     if (!user) return { error: "Please login to continue" };
     if (!amount) return { error: "No Product to checkout" };
@@ -62,6 +63,7 @@ export const createPaymentIntent = action(
       description: "Purchase from NetCart", // Add a description for export transactions
       metadata: {
         cart: JSON.stringify(cart),
+        phoneNumber, // Include phoneNumber in metadata
       },
     });
     return {
